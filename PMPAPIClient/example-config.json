@@ -1,0 +1,5 @@
+{
+  "AuthToken": "<enter API User Key here>",
+  "Host": "<enter PMP server FQDN and port here>",
+  "Prefix": "API"
+}
