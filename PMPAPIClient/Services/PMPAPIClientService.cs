@@ -197,15 +197,15 @@ namespace GSA.PMPAPIClient.Services
                 {
                     foreach (JObject resource in details)
                     {
-                        var type = (string)resource["RESOURCE TYPE"];
+                        //var type = (string)resource["RESOURCE TYPE"];
 
-                        if (type == "Application")
-                        {
+                        //if (type == "Application")
+                        //{
                             // We found a group we can dive into.
                             var id = (string)resource["RESOURCE ID"];
 
                             if (id != null) RetrieveAccounts(id).Wait();
-                        }
+                        //}
                     }
                 }
             }
